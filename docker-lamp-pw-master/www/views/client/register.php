@@ -1,30 +1,38 @@
 <h1>Cadastro Cliente</h1>
 <form action="?controller=client&action=registerView" method="post">
-    <div class="mb-3 mt-3">
-        <label class="form-label">Nome:</label>
+    <div class="form-group">
+        <label for="name">Nome:</label>
         <input type="text" class="form-control" name="name">
     </div>
-    <div class="mb-3">
-        <label class="form-label">Email:</label>
+    <div class="form-group">
+        <label for="email">Email:</label>
         <input type="text" class="form-control" name="email">
     </div>
-    <div class="form-check mb-3">
-        <label class="form-check-label">
-            <input class="form-check-input" type="checkbox" name="remember"> Remember me
-        </label>
+    <div class="form-group">
+        <label for="phone">Telefone:</label>
+        <input type="text" class="form-control" name="phone">
+    </div>
+    <div class="form-group">
+        <label for="address">Endereço:</label>
+        <input type="text" class="form-control" name="address">
     </div>
 
-    <div class="form-check">
-        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
-        <label class="form-check-label" for="radio1"></label>
-    </div>
-    <div class="form-check">
-        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
-        <label class="form-check-label" for="radio2"></label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
-        <label class="form-check-label">Option 1</label>
-    </div>
-    <button type="submit">Salvar</button>
+    <div class="form-group">
+        <div class="radio">
+            <label><input type="radio" name="gender" value="female" checked>Feminino</label>
+       </div>
+       <div class="radio">
+            <label><input type="radio" name="gender" value="male" checked>Masculino</label>
+       </div>
+       <div class="radio">
+            <label><input type="radio" name="gender" value="other" checked>Outro</label>
+       </div>
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="accept">Desejo receber os comunicados do site.
+        </label>
+
+    </div>   
+    <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

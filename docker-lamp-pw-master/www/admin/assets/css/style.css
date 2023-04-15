@@ -1,0 +1,29 @@
+header{
+    background-color: burlywood;
+    color: darkslateblue;
+}
+
+nav{
+    background-color: darkslateblue;
+    color: aliceblue;
+    min-height: 400px;
+
+}
+nav a:link, nav a:visited, nav a:hover, nav a:active{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+section{
+    color: darkslateblue;
+    background-color:beige;
+}
+
+footer{
+    background-color:burlywood;
+    color: darkslateblue;
+}
+
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+}

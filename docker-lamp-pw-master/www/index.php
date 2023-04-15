@@ -1,66 +1,60 @@
 <?php
-     ini_set('display_errors', 1);
-     ini_set('display_startup_errors', 1);
-     error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-     if(!isset($_GET['controller'])){
-        require_once('controllers/SiteController.php');
-        $SiteController = new SiteController();
-        $SiteController -> home ();
-     }else{
-        switch($_REQUEST['controller']){
-            case 'site':
-                require_once('controllers/SiteController.php');
-                $SiteController = new SiteController();
-                if(!isset($_GET['action'])){
-                    $SiteController -> home ();
-                }else{
-                    switch ($_REQUEST['action']){
-                        case 'home':
-                            $SiteController -> home ();
-                            break;
-                        case 'products':
-                            $SiteController -> products();
-                            break;
-                        case 'contact':
-                            $SiteController -> contact ();
-                            break; 
-                        case 'about':
-                            $SiteController -> about();
-                            break; 
-                    }
-                    
-                        }
-                        case 'client';
-                        require_once('controllers/Client.php');
-                        $Client = new Client();
-                        if(!isset($_GET['action'])){
-
-                        }else{
-                            switch ($_REQUEST['action']){
-                                case 'register':
-                                    $Client -> register();
-                                    break;
-
-                                case 'registerView';
-                                $Client -> registerView();
-
-                                    break;
-
-                                }
-                            }
-                            break;
-
-                            default;
-                              require_once('controllers/SiteController.php');
-                              $Site = new SiteController();
-                              $Site -> home ();
-                              break;
-
-
-                    }
-                
+if (!isset($_GET['controller'])) {
+    require_once('controllers/SiteController.php');
+    $SiteController = new SiteController();
+    $SiteController->home();
+} else {
+    switch ($_REQUEST['controller']) {
+        case 'site':
+            require_once('controllers/SiteController.php');
+            $SiteController = new SiteController();
+            if (!isset($_GET['action'])) {
+                $SiteController->home();
+            } else {
+                switch ($_REQUEST['action']) {
+                    case 'home':
+                        $SiteController->home();
+                        break;
+                    case 'products':
+                        $SiteController->products();
+                        break;
+                    case 'contact':
+                        $SiteController->contact();
+                        break;
+                    case 'about':
+                        $SiteController->about();
+                        break;
                 }
-         
+            }
+        case 'client';
+            require_once('controllers/Client.php');
+            $client = new Client();
+            if (!isset($_GET['action'])) {
+            } else {
+                switch ($_REQUEST['action']) {
+                    case 'register':
+                        $client -> register();
+                        break;
+                    case 'registerView';
+                        $client -> registerView();
+                        break;
+                    case 'listClients';
+                        $client -> listClients();
+                        break; 
+                }
+            }
+            break;
+        default;
+            require_once('controllers/SiteController.php');
+            $Site = new SiteController();
+            $Site->home();
+            break;
+    }
+
+}
+
 ?>
-       

@@ -18,16 +18,16 @@
     
 </head>
 <body>
-    <!----cabeçalho---->
+<!-------cabeçalho------->
     <header class=" p-5 bg-primary text-white text-center">
-         <h1>Meu site com Bootstrap</h1>
+         <h1>Meu site</h1>
     </header>
-    
+<!------Menu-------->
     <div class="container-fluid">
       <div class="row">
         <nav class="col-md-3 p-4 bg-dark">
-          <h2>Meu Menu</h2>
-          <ul class="nav flex-column">
+          <ul class="navbar-nav">
+            <h2>Meu Menu</h2>
             <li class="nav-item">
               <a class="nav-item" href="?controller=site&action=home">Home</a>
             </li>
@@ -40,11 +40,13 @@
             <li class="nav-item">
               <a class="nav-item" href="?controller=site&action=about">Sobre</a>
             </li>
-          </ul>       
+              
           <h3>Cliente</h3>
-          <ul class="nav flex-column">
             <li class="nav-item">
               <a class="nav-item" href="?controller=client&action=register">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item" href="?controller=client&action=listClients">Listar</a>
             </li>
            </ul>              
             </nav>
