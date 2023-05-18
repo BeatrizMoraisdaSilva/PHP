@@ -1,26 +1,30 @@
 <?php
 
 class UserController{
-public function validateLogin(){
-    $userName = $_POST['userName'];
-    $password = $_POST['password'];
-    require_once('models/UserModel.php');
-    $UserModel = new UserModel();
 
-    $result = $UserModel -> consultUser($userName);
+    public function validateLogin(){
+        
+        //se os dados do usuários tiverem corretos
+        $userName = $_POST['userName'];
+        $password = $_POST['password'];
 
-    if($line = $result -> fetch_assoc()){
-        if($password == $line ['password']){
-            $_SESSION['user'] = $line;
-            header('Location: index.php');
+        require_once('models/UserModel.php');
+        $UserModel = new UserModel();
+
+        $result = $UserModel -> consultUser($userName);
+
+        if($user = $result -> fetch_assoc()){
+            if($user['password']==$password){
+                $_SESSION['user'] = $user;
+                header('Location:index.php');
+            }else{
+                echo 'Senha errada!';
+            }
         }else{
-            echo 'senha inválida';
+            echo 'Usuário inválido!';
         }
-    }else{
-        echo 'Usuário não existente';
+
+        
     }
 
-
 }
-}
-?>

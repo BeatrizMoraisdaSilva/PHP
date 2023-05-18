@@ -1,4 +1,4 @@
-<h1>Cadastro Cliente</h1>
+<h2>Cadastro Cliente</h2>
 <form action="?controller=client&action=registerView" method="post">
     <div class="form-group">
         <label for="name">Nome:</label>
@@ -20,19 +20,19 @@
     <div class="form-group">
         <div class="radio">
             <label><input type="radio" name="gender" value="female" checked>Feminino</label>
-       </div>
-       <div class="radio">
+        </div>
+        <div class="radio">
             <label><input type="radio" name="gender" value="male" checked>Masculino</label>
-       </div>
-       <div class="radio">
+        </div>
+        <div class="radio">
             <label><input type="radio" name="gender" value="other" checked>Outro</label>
-       </div>
+        </div>
 
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" name="accept">Desejo receber os comunicados do site.
-        </label>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="accept">Desejo receber os comunicados do site.
+            </label>
 
-    </div>   
-    <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

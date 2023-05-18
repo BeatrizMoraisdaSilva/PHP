@@ -1,15 +1,26 @@
-<h1>Produtos Disponíveis</h1>
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-  <li>Coffee</li>
-  <li>Tea</li>
-</ul>
-<ul>
-<li>Milk</li>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-  <li>Coffee</li>
-</ul>
+<h2>Produtos Disponíveis</h2>
+
+<h4>Produto 1</h4>
+<p><strong>Preço:</strong> R$ 29.99
+	<strong>Descrição:</strong> Descrição
+</p>
+
+<h4>Produto 2</h4>
+<p><strong>Preço:</strong> R$ 29.99
+	<strong>Descrição:</strong> Descrição
+</p>
+
+<h4>Produto 3</h4>
+<p><strong>Preço:</strong> R$ 29.99
+	<strong>Descrição:</strong> Descrição
+</p>
+
+<h4>Produto 4</h4>
+<p><strong>Preço:</strong> R$ 29.99
+	<strong>Descrição:</strong> Descrição
+</p>
+
+<h4>Produto 5</h4>
+<p><strong>Preço:</strong> R$ 29.99
+	<strong>Descrição:</strong> Descrição
+</p>

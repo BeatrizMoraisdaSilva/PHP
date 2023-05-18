@@ -1,10 +1,11 @@
-</section>
-</div>
-</div>
+            </section>
+        </div>
+    </div>
 
-<footer class="p-4 text-center">
-    <h3>Meu Rodapé</h3>
-    <a href="../index.php">Área Administrativa</a>
-</footer>
+    <footer class="p-3 text-center">
+        <h2>Meu rodapé</h2>
+        <a href="../index.php">Área Pública</a>
+    </footer>
+
 </body>
 </html>

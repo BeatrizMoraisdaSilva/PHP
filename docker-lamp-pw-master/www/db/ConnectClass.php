@@ -3,19 +3,21 @@
 class ConnectClass
 {
     var $conn;
-    public function openConnect(){
+    public function openConnect()
+    {
         $servername = 'db';
         $username = 'root';
         $passaword = "1q2w3e4r5t";
         $dbname = 'pw_exemple';
-        $this -> conn = new mysqli($servername, $username, $passaword, $dbname);
-        if ($this -> conn ->connect_error) {
-            die("Connection failed: " . $this -> conn->connect_error);
+        $this->conn = new mysqli($servername, $username, $passaword, $dbname);
+        if ($this->conn->connect_error) {
+            die("Connection failed: " . $this->conn->connect_error);
         }
     }
 
-    public function getConn(){
-        return $this -> conn;
+    public function getConn()
+    {
+        return $this->conn;
 
     }
 
